@@ -1,3 +1,4 @@
+/* FORTSÄTT PÅ 5.6 TYPSNITT, SIDA 108 I LÄROBOKEN */
 @charset "UTF-8";
 /*
 ==================================================================================
@@ -10,8 +11,14 @@ html {
 body {
     margin: auto;
     max-width: 860px;
-    /* Lägg till deklarationer här */
+    font-family: "Helvetica Neue", "Liberation Sans", Calibri, Arial, sans-serif;
+    font-size: 100%;
 }
+/*
+section, header, footer {
+    outline: 1px solid red;
+}
+*/
 /*
 section, header, footer, nav, div[role=main] {
     outline: 1px solid red;
@@ -31,8 +38,31 @@ Page header, all pages
 ==================================================================================
 */
 header {
-    /* text-align: center; */
+    text-align: center;
 }
+.tagline {
+    font-size: 120%;
+    padding: 0.5em; /* Avstånd till kantlinje */
+    border-top: 3px double #00AF64;
+    border-bottom: 3px double #00AF64;
+    margin: 1em 0; /* Avstånd nedåt men inte uppåt */
+}
+h1 {
+    font-family: "Merienda One", cursive;
+}
+h1::first-letter {
+    color: #00AF64;
+}
+.hwrap {
+    display: flex; /* Gör divven till en flex container */
+    flex-wrap: wrap; /* Radbryt om det behövs */
+    align-items: center;/* Lägg elementen centrerat vertikalt */
+    justify-content: center; /* Och intill varandra centrerat */
+}
+.hwrap > a {
+    margin-right: 30px;
+}
+
 /*
 ==================================================================================
 Page footer rules
@@ -40,6 +70,11 @@ Page footer rules
 */
 
 /* TODO Avsnitt 5.2 */
+footer {
+    margin-top: 3em;
+    text-align: center;
+    color: #999;
+}
 
 /*
 ==================================================================================
@@ -50,7 +85,31 @@ Main site navigation
 /* Alla regler för .menu med relaterade element */
 
 /* TODO Avsnitt 5.2, 5.4, 5.5, 5.6, 11.4.2 */
-
+.menu > h2 {
+    margin: 0 0 1em;
+    padding: 2em 0;
+    background-color: #F5F5F5; /* Mycket ljus grå */
+    text-align: center;
+}
+.menu h2 {
+    /* Nya rader i befintlig regel */
+    box-shadow: inset 0 0 20px #007241;
+    border-radius: 50%;
+    /* Ny rad i befintlig regel */
+    font-family: "Merienda One", cursive;
+}
+.menu a:link, .menu a:visited {
+    text-decoration: none;
+    color: #000;
+}
+.menu a:focus, .menu a:hover {
+    text-decoration: underline;
+    color: #A62F00;
+}
+.menu a:active {
+    text-decoration: underline;
+    color: #FF4900;
+}
 
 /*
 ==================================================================================
@@ -59,6 +118,24 @@ Start page rules
 */
 
 /* Regler med klassen .startpage, avsnitt 5.2, 5.3 och 5.8 */
+.startpage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.startpage header, .startpage footer {
+    flex: 0 0 100%;
+}
+.startpage section {
+    flex: 0 0 22%;
+}
+.startpage h1 {
+    font-size: 500%; /* Massiv rubrik på startsidan */
+}
+.startpage .logo {
+    width: 235px;
+    height: 198px;
+}
 
 /*
 ==================================================================================
