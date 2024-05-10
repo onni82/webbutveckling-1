@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="sv">
+<head>
+    <meta charset="utf-8" />
+    <title>Exempel på element</title>
+    <style>
+		em { /* ska visas med icke-kursiv fetstil */
+			font-style: normal;
+			font-weight: bold;
+		}
+        strong { /* ska visas med icke-fet kursiv stil */
+            font-style: italic;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <p>Det finns olika element/taggar att använda i text i HTML för lägga fokus på specifika saker.</p>
+    <p>Man kan <em>betona</em> ett ord med &lt;em&gt;, som vanligtvis gör texten kursiv.</p>
+    <p>Om man vill ange att något är <strong>viktigt</strong> kan man använda sig av &lt;strong&gt;. Vanligtvis får den texten fetstil.</p>
+    <p>Ibland kan man få för sig att använda <i>kursiv text</i>. Detta skiljer sig från &lt;em&gt; då det används för att få en "alternativ röst eller känsla". Vill du betona? Använd em. Vill du bara ha utseendet? Använd CSS. Är det ett speciellt ord/fackterm som ska förklaras? Använd dfn (som står för definition). Har du en annan orsak så är &lt;i&gt; ett bra val.</p>
+    <p><b>Det finns ytterligare ett element: &lt;b&gt;.</b> Detta används när man vill att texten ska få uppmärksamhet, men är inte betonad eller viktig. Även om det tidigare har haft betydelsen fetstil (bold) så är det numera en fråga om varför man vill att texten ska ha fetstil.</p>
+    <p>Vid förkortningar kan man använda &lt;abbr&gt; <abbr title="på grund av">pga</abbr> att det går snabbare att skriva saker. Använd title-attributen för att skriva en förklaring till förkortning första gången du använder det så folk vet vad du menar.</p>
+    <p>Det finns även ett element för att skriva tid och datum. Då används &lt;time&gt;. På <time datetime="2024-12-31">nyårsafton</time> smäller raketerna. Attributet som användes här är datetime.</p>
+    <p>I detta dokument har &lt;em&gt; gjorts om så att det visas med icke-kursiv fetstil, samt att &lt;strong&gt; visas med icke-fet kursiv stil.</p>
+</body>
+</html>
