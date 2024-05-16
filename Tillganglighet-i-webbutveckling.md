@@ -20,7 +20,7 @@ Exempel på hur detta kan uppnås med standarder som HTML, CSS och JavaScript in
 
  * Webstandarder och kompatibilitetstester: Genom att följa webbstandarder och genomföra kompatibilitetstester på olika webbläsare och enheter kan du säkerställa att din applikation fungerar korrekt över olika plattformar. Detta innebär att du bör undvika användning av webbläsarspecifika funktioner eller egenskaper som kan orsaka problem på andra plattformar.
 
- * Genom att följa dessa principer och använda standarder som HTML, CSS och JavaScript kan du skapa webbapplikationer som är oberoende av användaragent, operativsystem och hårdvaruplattform och som ger en enhetlig och robust användarupplevelse för alla användare.
+Genom att följa dessa principer och använda standarder som HTML, CSS och JavaScript kan du skapa webbapplikationer som är oberoende av användaragent, operativsystem och hårdvaruplattform och som ger en enhetlig och robust användarupplevelse för alla användare.
 
 ## Användaranpassning
 
